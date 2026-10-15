@@ -1,0 +1,3 @@
+# The School Management System runs on the Python 3 standard library only.
+# This file exists so hosting platforms detect the project as a Python app.
+# No third-party packages are required or installed.

@@ -1,0 +1,10 @@
+# Render Blueprint — lets Render create the web service from this repo without
+# you filling in the settings by hand. Push the repo to GitHub, then in Render
+# choose New > Blueprint and pick the repository.
+services:
+  - type: web
+    name: school-management-system
+    env: python
+    plan: free
+    startCommand: python3 run.py --host 0.0.0.0
+    healthCheckPath: /
