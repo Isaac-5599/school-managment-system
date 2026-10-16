@@ -1,0 +1,208 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1800' height='1070' viewBox='0 0 1800 1070' role='img' font-family='Helvetica, Arial, sans-serif'>
+<title>Entity relationship diagram</title>
+<defs><marker id='arrow' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#64748b'/></marker></defs>
+<rect width='100%' height='100%' fill='white'/>
+<rect x='40' y='60' width='280' height='221' rx='6' fill='#ffffff' stroke='#1e2a52' stroke-width='1.6'/>
+<rect x='40' y='60' width='280' height='34' rx='6' fill='#dbeafe' stroke='#1e2a52' stroke-width='1.6'/>
+<text x='52' y='82' font-size='14.5' fill='#1e2a52' text-anchor='start' font-weight='bold'>users</text>
+<text x='52' y='116' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>id  PK</text>
+<text x='52' y='135' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>full_name</text>
+<text x='52' y='154' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>username  UQ</text>
+<text x='52' y='173' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>email  UQ</text>
+<text x='52' y='192' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>password_hash</text>
+<text x='52' y='211' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>password_salt</text>
+<text x='52' y='230' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>role  (admin|teacher|student)</text>
+<text x='52' y='249' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>is_active</text>
+<text x='52' y='268' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>created_at</text>
+<rect x='400' y='60' width='280' height='259' rx='6' fill='#ffffff' stroke='#1e2a52' stroke-width='1.6'/>
+<rect x='400' y='60' width='280' height='34' rx='6' fill='#dbeafe' stroke='#1e2a52' stroke-width='1.6'/>
+<text x='412' y='82' font-size='14.5' fill='#1e2a52' text-anchor='start' font-weight='bold'>teachers</text>
+<text x='412' y='116' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>id  PK</text>
+<text x='412' y='135' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>staff_no  UQ</text>
+<text x='412' y='154' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>user_id  FK -&gt; users</text>
+<text x='412' y='173' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>first_name</text>
+<text x='412' y='192' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>last_name</text>
+<text x='412' y='211' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>email</text>
+<text x='412' y='230' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>phone</text>
+<text x='412' y='249' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>qualification</text>
+<text x='412' y='268' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>specialization</text>
+<text x='412' y='287' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>hire_date</text>
+<text x='412' y='306' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>status  (active|on leave|retired)</text>
+<rect x='760' y='60' width='280' height='145' rx='6' fill='#ffffff' stroke='#1e2a52' stroke-width='1.6'/>
+<rect x='760' y='60' width='280' height='34' rx='6' fill='#dbeafe' stroke='#1e2a52' stroke-width='1.6'/>
+<text x='772' y='82' font-size='14.5' fill='#1e2a52' text-anchor='start' font-weight='bold'>classes</text>
+<text x='772' y='116' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>id  PK</text>
+<text x='772' y='135' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>name  UQ</text>
+<text x='772' y='154' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>level</text>
+<text x='772' y='173' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>academic_year</text>
+<text x='772' y='192' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>homeroom_teacher_id  FK -&gt; teachers</text>
+<rect x='1120' y='60' width='280' height='126' rx='6' fill='#ffffff' stroke='#1e2a52' stroke-width='1.6'/>
+<rect x='1120' y='60' width='280' height='34' rx='6' fill='#dbeafe' stroke='#1e2a52' stroke-width='1.6'/>
+<text x='1132' y='82' font-size='14.5' fill='#1e2a52' text-anchor='start' font-weight='bold'>subjects</text>
+<text x='1132' y='116' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>id  PK</text>
+<text x='1132' y='135' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>name</text>
+<text x='1132' y='154' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>code  UQ</text>
+<text x='1132' y='173' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>category  (core|elective)</text>
+<rect x='1480' y='60' width='280' height='107' rx='6' fill='#ffffff' stroke='#1e2a52' stroke-width='1.6'/>
+<rect x='1480' y='60' width='280' height='34' rx='6' fill='#dbeafe' stroke='#1e2a52' stroke-width='1.6'/>
+<text x='1492' y='82' font-size='14.5' fill='#1e2a52' text-anchor='start' font-weight='bold'>class_subjects</text>
+<text x='1492' y='116' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>id  PK</text>
+<text x='1492' y='135' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>class_id  FK -&gt; classes</text>
+<text x='1492' y='154' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>subject_id  FK -&gt; subjects</text>
+<rect x='40' y='430' width='280' height='145' rx='6' fill='#ffffff' stroke='#1e2a52' stroke-width='1.6'/>
+<rect x='40' y='430' width='280' height='34' rx='6' fill='#dbeafe' stroke='#1e2a52' stroke-width='1.6'/>
+<text x='52' y='452' font-size='14.5' fill='#1e2a52' text-anchor='start' font-weight='bold'>audit_log</text>
+<text x='52' y='486' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>id  PK</text>
+<text x='52' y='505' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>user_id  FK -&gt; users</text>
+<text x='52' y='524' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>action</text>
+<text x='52' y='543' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>detail</text>
+<text x='52' y='562' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>at</text>
+<rect x='400' y='430' width='280' height='297' rx='6' fill='#ffffff' stroke='#1e2a52' stroke-width='1.6'/>
+<rect x='400' y='430' width='280' height='34' rx='6' fill='#dbeafe' stroke='#1e2a52' stroke-width='1.6'/>
+<text x='412' y='452' font-size='14.5' fill='#1e2a52' text-anchor='start' font-weight='bold'>students</text>
+<text x='412' y='486' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>id  PK</text>
+<text x='412' y='505' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>admission_no  UQ</text>
+<text x='412' y='524' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>user_id  FK -&gt; users</text>
+<text x='412' y='543' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>class_id  FK -&gt; classes</text>
+<text x='412' y='562' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>first_name</text>
+<text x='412' y='581' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>last_name</text>
+<text x='412' y='600' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>gender</text>
+<text x='412' y='619' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>date_of_birth</text>
+<text x='412' y='638' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>guardian_name</text>
+<text x='412' y='657' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>guardian_phone</text>
+<text x='412' y='676' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>guardian_email</text>
+<text x='412' y='695' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>enrollment_date</text>
+<text x='412' y='714' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>status  (active|graduated|withdrawn)</text>
+<rect x='760' y='430' width='280' height='126' rx='6' fill='#ffffff' stroke='#1e2a52' stroke-width='1.6'/>
+<rect x='760' y='430' width='280' height='34' rx='6' fill='#dbeafe' stroke='#1e2a52' stroke-width='1.6'/>
+<text x='772' y='452' font-size='14.5' fill='#1e2a52' text-anchor='start' font-weight='bold'>teacher_assignments</text>
+<text x='772' y='486' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>id  PK</text>
+<text x='772' y='505' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>teacher_id  FK -&gt; teachers</text>
+<text x='772' y='524' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>class_id  FK -&gt; classes</text>
+<text x='772' y='543' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>subject_id  FK -&gt; subjects</text>
+<rect x='1120' y='430' width='280' height='183' rx='6' fill='#ffffff' stroke='#1e2a52' stroke-width='1.6'/>
+<rect x='1120' y='430' width='280' height='34' rx='6' fill='#dbeafe' stroke='#1e2a52' stroke-width='1.6'/>
+<text x='1132' y='452' font-size='14.5' fill='#1e2a52' text-anchor='start' font-weight='bold'>fee_invoices</text>
+<text x='1132' y='486' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>id  PK</text>
+<text x='1132' y='505' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>student_id  FK -&gt; students</text>
+<text x='1132' y='524' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>term</text>
+<text x='1132' y='543' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>academic_year</text>
+<text x='1132' y='562' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>description</text>
+<text x='1132' y='581' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>amount_due</text>
+<text x='1132' y='600' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>issued_on</text>
+<rect x='1480' y='430' width='280' height='183' rx='6' fill='#ffffff' stroke='#1e2a52' stroke-width='1.6'/>
+<rect x='1480' y='430' width='280' height='34' rx='6' fill='#dbeafe' stroke='#1e2a52' stroke-width='1.6'/>
+<text x='1492' y='452' font-size='14.5' fill='#1e2a52' text-anchor='start' font-weight='bold'>fee_payments</text>
+<text x='1492' y='486' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>id  PK</text>
+<text x='1492' y='505' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>invoice_id  FK -&gt; fee_invoices</text>
+<text x='1492' y='524' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>amount</text>
+<text x='1492' y='543' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>method  (cash|bank|mobile|cheque)</text>
+<text x='1492' y='562' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>reference</text>
+<text x='1492' y='581' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>paid_on</text>
+<text x='1492' y='600' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>received_by  FK -&gt; users</text>
+<rect x='40' y='800' width='280' height='202' rx='6' fill='#ffffff' stroke='#1e2a52' stroke-width='1.6'/>
+<rect x='40' y='800' width='280' height='34' rx='6' fill='#dbeafe' stroke='#1e2a52' stroke-width='1.6'/>
+<text x='52' y='822' font-size='14.5' fill='#1e2a52' text-anchor='start' font-weight='bold'>attendance_records</text>
+<text x='52' y='856' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>id  PK</text>
+<text x='52' y='875' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>class_id  FK -&gt; classes</text>
+<text x='52' y='894' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>student_id  FK -&gt; students</text>
+<text x='52' y='913' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>date</text>
+<text x='52' y='932' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>period</text>
+<text x='52' y='951' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>status  (present|absent|late|excused)</text>
+<text x='52' y='970' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>note</text>
+<text x='52' y='989' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>recorded_by  FK -&gt; users</text>
+<rect x='400' y='800' width='280' height='164' rx='6' fill='#ffffff' stroke='#1e2a52' stroke-width='1.6'/>
+<rect x='400' y='800' width='280' height='34' rx='6' fill='#dbeafe' stroke='#1e2a52' stroke-width='1.6'/>
+<text x='412' y='822' font-size='14.5' fill='#1e2a52' text-anchor='start' font-weight='bold'>marks</text>
+<text x='412' y='856' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>id  PK</text>
+<text x='412' y='875' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>exam_id  FK -&gt; exam_sessions</text>
+<text x='412' y='894' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>student_id  FK -&gt; students</text>
+<text x='412' y='913' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>score  (&lt;= exam.max_marks)</text>
+<text x='412' y='932' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>entered_by  FK -&gt; users</text>
+<text x='412' y='951' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>updated_at</text>
+<rect x='760' y='800' width='280' height='221' rx='6' fill='#ffffff' stroke='#1e2a52' stroke-width='1.6'/>
+<rect x='760' y='800' width='280' height='34' rx='6' fill='#dbeafe' stroke='#1e2a52' stroke-width='1.6'/>
+<text x='772' y='822' font-size='14.5' fill='#1e2a52' text-anchor='start' font-weight='bold'>exam_sessions</text>
+<text x='772' y='856' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>id  PK</text>
+<text x='772' y='875' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>title</text>
+<text x='772' y='894' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>term</text>
+<text x='772' y='913' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>academic_year</text>
+<text x='772' y='932' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>class_id  FK -&gt; classes</text>
+<text x='772' y='951' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>subject_id  FK -&gt; subjects</text>
+<text x='772' y='970' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>exam_date</text>
+<text x='772' y='989' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>max_marks</text>
+<text x='772' y='1008' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>created_by  FK -&gt; users</text>
+<rect x='1120' y='800' width='280' height='145' rx='6' fill='#ffffff' stroke='#1e2a52' stroke-width='1.6'/>
+<rect x='1120' y='800' width='280' height='34' rx='6' fill='#dbeafe' stroke='#1e2a52' stroke-width='1.6'/>
+<text x='1132' y='822' font-size='14.5' fill='#1e2a52' text-anchor='start' font-weight='bold'>grade_scales</text>
+<text x='1132' y='856' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>id  PK</text>
+<text x='1132' y='875' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>min_pct</text>
+<text x='1132' y='894' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>max_pct</text>
+<text x='1132' y='913' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>grade  (A..F)</text>
+<text x='1132' y='932' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>remark</text>
+<path d='M320,126.3 L400,137.7' fill='none' stroke='#64748b' stroke-width='1.4' marker-end='url(#arrow)'/>
+<text x='337.82' y='123.839' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>0,1</text>
+<text x='382.18' y='130.161' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>1</text>
+<text x='400' y='131.7' font-size='11.5' fill='#475569' text-anchor='middle' font-weight='normal' stroke='white' stroke-width='4' paint-order='stroke'>has login</text>
+<path d='M264,281 L498,430' fill='none' stroke='#64748b' stroke-width='1.4' marker-end='url(#arrow)'/>
+<text x='279.183' y='285.668' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>0,1</text>
+<text x='482.817' y='415.332' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>1</text>
+<path d='M138,281 L180,430' fill='none' stroke='#64748b' stroke-width='1.4' marker-end='url(#arrow)'/>
+<text x='142.884' y='293.325' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>1</text>
+<text x='175.116' y='407.675' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>N</text>
+<path d='M844,205 L582,430' fill='none' stroke='#64748b' stroke-width='1.4' marker-end='url(#arrow)'/>
+<text x='830.344' y='211.727' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>1</text>
+<text x='595.656' y='413.273' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>N</text>
+<text x='582' y='424' font-size='11.5' fill='#475569' text-anchor='middle' font-weight='normal' stroke='white' stroke-width='4' paint-order='stroke'>enrolled in</text>
+<path d='M680,137.7 L760,103.5' fill='none' stroke='#64748b' stroke-width='1.4' marker-end='url(#arrow)'/>
+<text x='696.551' y='125.624' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>0,1</text>
+<text x='743.449' y='105.576' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>1</text>
+<text x='760' y='97.5' font-size='11.5' fill='#475569' text-anchor='middle' font-weight='normal' stroke='white' stroke-width='4' paint-order='stroke'>homeroom</text>
+<path d='M624,319 L816,430' fill='none' stroke='#64748b' stroke-width='1.4' marker-end='url(#arrow)'/>
+<text x='639.583' y='323.009' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>1</text>
+<text x='800.417' y='415.991' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>N</text>
+<path d='M928,430 L928,205' fill='none' stroke='#64748b' stroke-width='1.4' marker-end='url(#arrow)'/>
+<text x='928' y='407' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>N</text>
+<text x='928' y='218' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>1</text>
+<path d='M1040,455.2 L1176,186' fill='none' stroke='#64748b' stroke-width='1.4' marker-end='url(#arrow)'/>
+<text x='1048.12' y='434.134' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>N</text>
+<text x='1167.88' y='197.066' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>1</text>
+<path d='M1400,123 L1480,113.5' fill='none' stroke='#64748b' stroke-width='1.4' marker-end='url(#arrow)'/>
+<text x='1417.87' y='115.877' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>1</text>
+<text x='1462.13' y='110.623' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>N</text>
+<path d='M970,60 L970,36 L1550,36 L1550,60' fill='none' stroke='#64748b' stroke-width='1.4' marker-end='url(#arrow)'/>
+<text x='970' y='37' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>1</text>
+<text x='1550' y='37' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>N</text>
+<path d='M638,727 L638,785 L1090,785 L1120,466.6' fill='none' stroke='#64748b' stroke-width='1.4' marker-end='url(#arrow)'/>
+<text x='638' y='740' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>1</text>
+<text x='1118.31' y='479.521' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>N</text>
+<path d='M1400,521.5 L1480,521.5' fill='none' stroke='#64748b' stroke-width='1.4' marker-end='url(#arrow)'/>
+<text x='1418' y='516.5' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>1</text>
+<text x='1462' y='516.5' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>N</text>
+<path d='M526,727 L532,790 L540,800' fill='none' stroke='#64748b' stroke-width='1.4' marker-end='url(#arrow)'/>
+<text x='527.707' y='739.919' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>1</text>
+<text x='528.755' y='780.944' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>N</text>
+<text x='532' y='784' font-size='11.5' fill='#475569' text-anchor='middle' font-weight='normal' stroke='white' stroke-width='4' paint-order='stroke'>scored in</text>
+<path d='M442,727 L442,792 L194,792 L194,800' fill='none' stroke='#64748b' stroke-width='1.4' marker-end='url(#arrow)'/>
+<text x='442' y='740' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>1</text>
+<text x='194' y='777' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>N</text>
+<path d='M788,205 L788,210 L20,210 L20,830 L82,800' fill='none' stroke='#64748b' stroke-width='1.4' marker-end='url(#arrow)'/>
+<text x='788' y='218' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>1</text>
+<text x='65.7971' y='802.84' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>N</text>
+<path d='M1012,205 L1060,772 L872,772 L872,800' fill='none' stroke='#64748b' stroke-width='1.4' marker-end='url(#arrow)'/>
+<text x='1013.52' y='217.936' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>1</text>
+<text x='872' y='777' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>N</text>
+<path d='M1358,186 L1358,415 L1012,415 L1012,800' fill='none' stroke='#64748b' stroke-width='1.4' marker-end='url(#arrow)'/>
+<text x='1358' y='199' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>1</text>
+<text x='1012' y='777' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>N</text>
+<text x='1012' y='409' font-size='11.5' fill='#475569' text-anchor='middle' font-weight='normal' stroke='white' stroke-width='4' paint-order='stroke'>examined in</text>
+<path d='M760,921.55 L740,922 L740,883 L680,882' fill='none' stroke='#64748b' stroke-width='1.4' marker-end='url(#arrow)'/>
+<text x='742.005' y='916.955' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>1</text>
+<text x='697.998' y='877.3' font-size='11' fill='#1e2a52' text-anchor='middle' font-weight='bold' stroke='white' stroke-width='4' paint-order='stroke'>N</text>
+<text x='1560' y='960' font-size='13' fill='#1e2a52' text-anchor='start' font-weight='bold'>Legend</text>
+<text x='1560' y='980' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>PK primary key</text>
+<text x='1560' y='998' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>FK foreign key</text>
+<text x='1560' y='1016' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>UQ unique key</text>
+<text x='1560' y='1034' font-size='12' fill='#0f172a' text-anchor='start' font-weight='normal'>1 / N / 0,1 cardinality</text>
+<text x='24' y='1056' font-size='12.5' fill='#475569' text-anchor='start' font-weight='normal' font-style='italic'>users.created_by / entered_by / recorded_by / received_by all reference users(id); only the structural links are drawn. grade_scales is a lookup table read by the reporting layer.</text>
+</svg>

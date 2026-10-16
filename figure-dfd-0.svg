@@ -1,0 +1,34 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1100' height='640' viewBox='0 0 1100 640' role='img' font-family='Helvetica, Arial, sans-serif'>
+<title>Context diagram (DFD level 0)</title>
+<defs><marker id='arrow' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#64748b'/></marker></defs>
+<rect width='100%' height='100%' fill='white'/>
+<rect x='420' y='250' width='260' height='130' rx='14' fill='#fef3c7' stroke='#b45309' stroke-width='2'/>
+<text x='550' y='305' font-size='15' fill='#b45309' text-anchor='middle' font-weight='bold'>0</text>
+<text x='550' y='332' font-size='14' fill='#0f172a' text-anchor='middle' font-weight='bold'>School Management System</text>
+<rect x='40' y='60' width='200' height='52' rx='4' fill='#e0f2fe' stroke='#0369a1' stroke-width='1.6'/>
+<text x='140' y='91' font-size='13.5' fill='#0f172a' text-anchor='middle' font-weight='bold'>Administrator</text>
+<rect x='40' y='500' width='200' height='52' rx='4' fill='#e0f2fe' stroke='#0369a1' stroke-width='1.6'/>
+<text x='140' y='531' font-size='13.5' fill='#0f172a' text-anchor='middle' font-weight='bold'>Teacher</text>
+<rect x='860' y='500' width='200' height='52' rx='4' fill='#e0f2fe' stroke='#0369a1' stroke-width='1.6'/>
+<text x='960' y='531' font-size='13.5' fill='#0f172a' text-anchor='middle' font-weight='bold'>Student</text>
+<rect x='860' y='60' width='200' height='52' rx='4' fill='#e0f2fe' stroke='#0369a1' stroke-width='1.6'/>
+<text x='960' y='91' font-size='13.5' fill='#0f172a' text-anchor='middle' font-weight='bold'>Project Supervisor</text>
+<path d='M240,86 L470,250' fill='none' stroke='#64748b' stroke-width='1.4' marker-end='url(#arrow)'/>
+<text x='250' y='58' font-size='11.5' fill='#0f172a' text-anchor='start' font-weight='normal'>login credentials</text>
+<text x='250' y='74' font-size='11.5' fill='#0f172a' text-anchor='start' font-weight='normal'>student, staff, class and subject records</text>
+<path d='M420,285 L240,108' fill='none' stroke='#64748b' stroke-width='1.4' marker-end='url(#arrow)'/>
+<text x='250' y='134' font-size='11.5' fill='#0f172a' text-anchor='start' font-weight='normal'>confirmation, dashboard, audit trail</text>
+<path d='M240,520 L470,380' fill='none' stroke='#64748b' stroke-width='1.4' marker-end='url(#arrow)'/>
+<text x='250' y='562' font-size='11.5' fill='#0f172a' text-anchor='start' font-weight='normal'>login credentials</text>
+<text x='250' y='578' font-size='11.5' fill='#0f172a' text-anchor='start' font-weight='normal'>daily attendance, examination scores</text>
+<path d='M420,350 L240,545' fill='none' stroke='#64748b' stroke-width='1.4' marker-end='url(#arrow)'/>
+<text x='250' y='480' font-size='11.5' fill='#0f172a' text-anchor='start' font-weight='normal'>class list and mark sheet</text>
+<path d='M860,520 L650,375' fill='none' stroke='#64748b' stroke-width='1.4' marker-end='url(#arrow)'/>
+<text x='850' y='566' font-size='11.5' fill='#0f172a' text-anchor='end' font-weight='normal'>login credentials</text>
+<path d='M680,350 L860,540' fill='none' stroke='#64748b' stroke-width='1.4' marker-end='url(#arrow)'/>
+<text x='850' y='478' font-size='11.5' fill='#0f172a' text-anchor='end' font-weight='normal'>report card and results</text>
+<text x='850' y='494' font-size='11.5' fill='#0f172a' text-anchor='end' font-weight='normal'>attendance and fee statement</text>
+<path d='M680,285 L860,105' fill='none' stroke='#64748b' stroke-width='1.4' marker-end='url(#arrow)'/>
+<text x='850' y='138' font-size='11.5' fill='#0f172a' text-anchor='end' font-weight='normal'>project progress report</text>
+<text x='24' y='626' font-size='12.5' fill='#475569' text-anchor='start' font-weight='normal' font-style='italic'>Level 0 presents the system as a single process and the external entities that exchange data with it.</text>
+</svg>
